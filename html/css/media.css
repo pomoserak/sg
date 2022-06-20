@@ -1,0 +1,112 @@
+
+@media (min-width: 320px) and (max-width: 768px) {
+	.header{
+		display: none;
+	}
+	.header-phone{
+		display: block;
+		min-width: 320px;
+	}
+	.bodys-right{
+		display: none;
+	}
+	.bodys-left{
+		width: 100%;
+	}
+	.footer{
+		width: 100%;
+		height: 962px;
+		background-image: url("../img/foot-pad.png");
+		background-repeat: no-repeat;
+		background-position: left;
+		background-size: 100% 100%;
+	}
+	.nav-phone-clear{
+		display: block;
+	}
+	.clear{
+		display: none;
+	}
+	.header-right{
+		display: none;
+	}
+	.put-login{
+		font-size: 18px;
+	}
+	.msg{
+		margin-top:28%;
+	}
+
+
+}
+@media (min-width: 320px) and (max-width: 414px) {
+	.footer{
+		width: 100%;
+		background-image: url("../img/phone-foot.png");
+		background-repeat: no-repeat;
+	}
+	.hr-color{
+		display: none;
+	}
+	.logo-nav{
+		display: none;
+	}
+	.tag1{
+		margin-top: 60px !important;
+	}
+	.navo-bar{
+		background-image: url("../img/nav-phone.png");
+		background-repeat : no-repeat;
+		background-position : left;
+		/* height: 64px; */
+	}
+	
+	
+
+}
+@media screen and (max-width: 1024px) {
+	.footer{
+		width: 100%;
+		height: 904px;
+		background-image: url("../img/foot-pad.png");
+		background-repeat: no-repeat;
+		background-position: left;
+		background-size: 100% 100%;
+	}
+	.contenr{
+		height: 1366px;
+
+	}
+	.dika{
+		margin-top:10%;
+	}
+	.msg{
+		margin-top:16%;
+	}
+
+
+}
+@media screen and (max-width: 768px) {
+	/* .cadre{
+		width: 80%;
+	} */
+	.tag1{
+		margin-top: 6%;
+
+	}
+
+
+}
+@media screen and (max-width: 320px) {
+	/* .cadre{
+		width: 80%;
+	} */
+	.tag1{
+		width: 94%;
+		height: 60px;
+
+	}
+
+
+
+}

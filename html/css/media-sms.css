@@ -1,0 +1,125 @@
+@media (min-width: 768px) and (max-width: 1224px){
+	.titi1{
+		width: 100%;
+		height: 80px;
+		background-image: url("../img2/pad-tite.png");
+		background-position: left;
+	}
+
+}
+@media (min-width: 414px) and (max-width: 768px) {
+	.header{
+		display: none;
+	}
+	.header-phone{
+		display: block;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		
+	}
+	.navbar{
+		display: none;
+	}
+	.navbar-phone{
+		margin-top: 49px;
+		display: block;
+		float: left;
+		z-index: -1;
+
+	}
+	.foot{
+		width: 100%;
+		height:485px;
+		background-image: url("../img2/bg-foot-pad.png"); 
+		background-size: 100% 100%;
+	}
+	.titi1{
+		background-image: url("../img2/big-small-bg-tite.png");
+		width: 100%;
+		height: 80px;
+		background-size: 100% 100%;
+	}
+	
+
+}
+@media (min-width: 320px) and (max-width: 411px) {
+	.header{
+		display: none;
+	}
+	.header-phone{
+		display: block;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		
+	}
+	.navbar{
+		display: none;
+	}
+	.navbar-phone{
+		margin-top: 49px;
+		display: block;
+		float: left;
+		z-index: -1;
+
+	}
+	.foot{
+		height:483px;
+		background-image: url("../img2/foot-phone.png"); 
+		background-position: left;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	.titi1{
+		background-image: url("../img2/big-small-bg-tite.png");
+		width: 100%;
+		height: 80px;
+		background-size: 100% 100%;
+	}
+    
+	
+
+
+
+}
+@media screen and (max-width: 320px) {
+	.taga1{
+		width: 260px;
+		background-size: 100% 100%;
+	}
+
+   
+
+}
+@media screen and (max-width: 640px) {
+	.titi1{
+		background-image: url("../img2/big-small-bg-tite.png");
+		width: 100%;
+		height: 80px;
+		background-size: 100% 100%;
+	}
+
+}
+@media screen and (max-width: 786px) {
+	.titi1{
+		background-image: url("../img2/pad-tite.png");
+		width: 100%;
+		height: 80px;
+		background-size: 100% 100%;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.foot{
+		background-image: url("../img2/pad-pad-foot.png");
+		width: 100%;
+		height: 501px;
+		background-size: 100% 100%;
+	}
+}
+@media screen and (max-width: 835px) {
+	
+	.header-right{
+		display: none;
+	}
+}
